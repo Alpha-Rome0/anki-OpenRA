@@ -1,0 +1,32 @@
+orca:
+	Inherits: ^VehicleOverlays
+	icon: orcaicon
+
+orcab:
+	Inherits: ^VehicleOverlays
+	icon: obmbicon
+
+trnsport:
+	Inherits: ^VehicleOverlays
+	icon: otrnicon
+
+scrin:
+	Inherits: ^VehicleOverlays
+	icon: proicon
+
+apache:
+	Inherits: ^VehicleOverlays
+	icon: apchicon
+	rotor: lrotor
+		Length: 4
+		Offset: 0, 0, 16
+		ZRamp: 1
+	slow-rotor: lrotor
+		Start: 4
+		Length: 8
+		Offset: 0, 0, 16
+		ZRamp: 1
+
+orcatran:
+	Inherits: ^VehicleOverlays
+	icon: crryicon
