@@ -1,3 +1,10 @@
+# Installation
+1. Download the source and build using the instructions below
+2. add anki_ra.py to your Anki2\addons folder
+3. Start Anki and OpenRA and start playing a game.
+4. Your resources will show up once Anki is properly connected.
+5. rip through flashcards!
+
 # OpenRA
 
 A Libre/Free Real Time Strategy game engine supporting early Westwood classics.
