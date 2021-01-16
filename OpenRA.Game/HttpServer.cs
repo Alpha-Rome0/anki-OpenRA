@@ -45,7 +45,7 @@ namespace OpenRA
 
 				World world = Game.OrderManager.World;
 
-				if (world == null)
+				if (world == null || world.LocalPlayer == null)
 				{
 					continue;
 				}
