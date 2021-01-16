@@ -59,22 +59,21 @@ __version__ = '0.1'
 
 def cardReview():
     multiplier = 1
-    ease = max(1.3, mw.reviewer.card.factor / 1000.0) 
+    ease = mw.reviewer.card.factor / 1000.0
     if ease < 2.5:
         rn = random.random()
         if rn >= .98:
-            multiplier *= 10
+            multiplier = 10
         elif rn >= .9:
-            multiplier *= 5
+            multiplier = 5
         elif rn >= .75:
-            multiplier *= 2
+            multiplier = 2
         if multiplier > 1:
             parent = mw.app.activeWindow() or mw
             mb = QMessageBox(parent)
             mb.setText("{}x review!".format(multiplier))
             mb.exec_()
-	multiplier *= 150 * max(0.1, -5.0 / 3 * ease + 31.0 / 6)
-    send_request("/review", multiplier)
+    send_request("/review", multiplier * 150 * max(0.1, -5.0 / 3 * ease + 31.0 / 6))
 
 def send_request(uri, multiplier = 1):
     hdr = {
